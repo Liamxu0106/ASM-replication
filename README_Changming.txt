@@ -1,0 +1,6 @@
+1. data_prep.py is used for data conversion.
+2. regressions.do is slightly modified to make the command format more universally suitable (meaning, I didn’t follow the original coding style because I didn’t intend to export the LaTeX table). Also, only the codes for Table 1 are kept. Stata is also used to export f2_time_plot.csv for the generation of figures in step 4.
+3. asm_bife.R is used for bias-corrected fix-effects regression. However, this is a bit too deep, so I didn’t run the R codes. This could potentially be the result why the table generated from my Stata code has a slight difference in the sample number of column one (161862->166327). But since the coefficients align quite well, I keep this code and results.
+4. generate_figure2.py runs to produce data/figures/f2_summary.png (the original figure 2a,b,c). Besides, another graph f2_soy_diff is added, to showcase the differences of deforestation rate between soy-suitable and non-suitable lands.
+
+After all, I believe when having downloaded the whole zip file, only change the roots of Stata code and python code should be enough to replicate the table 1 and figure 2 of original paper, along with an additional figure showing the difference between soy-suitable and non-suitable lands.
